@@ -14,3 +14,33 @@ const (
 	Ebook                = "ebook"      // ebook
 	All                  = "all"        // movie, album, allArtist, podcast, musicVideo, mix, audiobook, tvSeason, allTrack
 )
+
+func ToString(mediaType MediaType) string {
+
+	stringType := ""
+
+	switch mediaType {
+	case Movie:
+		stringType = "movie"
+	case Podcast:
+		stringType = "podcast"
+	case Music:
+		stringType = "music"
+	case MusicVideo:
+		stringType = "musicVideo"
+	case AudioBook:
+		stringType = "audioBook"
+	case ShortFilm:
+		stringType = "shortFilm"
+	case TvShow:
+		stringType = "tvShow"
+	case Software:
+		stringType = "software"
+	case Ebook:
+		stringType = "ebook"
+	case All:
+		stringType = "all"
+	}
+
+	return stringType
+}
