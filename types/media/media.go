@@ -1,4 +1,4 @@
-package itunes
+package media
 
 type MediaType string
 
