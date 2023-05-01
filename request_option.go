@@ -91,6 +91,7 @@ func Version(version int) RequestOption {
 	}
 }
 
+// A flag indicating whether or not you want to include explicit content in your search results. The default is Yes.
 func Explicit(isExplicit bool) RequestOption {
 	return func(o *requestOption) {
 		explicit := "Yes"
