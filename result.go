@@ -1,5 +1,11 @@
 package itunes
 
+// iTunesResult represent iTunes response outer most structure
+type iTunesResult struct {
+	ResultCount int      `json:"resultCount"`
+	Results     []Result `json:"results"`
+}
+
 type Result struct {
 	WrapperType            string  `json:"wrapperType"`
 	Kind                   string  `json:"kind"`
