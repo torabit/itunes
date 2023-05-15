@@ -22,9 +22,8 @@ const (
 )
 
 type Client struct {
-	http    *http.Client
-	baseURL string
-
+	http      *http.Client
+	baseURL   string
 	autoRetry bool
 }
 
