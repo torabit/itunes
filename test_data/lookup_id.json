@@ -1,0 +1,26 @@
+{
+  "resultCount": 1,
+  "results": [
+    {
+      "wrapperType": "collection",
+      "collectionType": "Album",
+      "artistId": 586860631,
+      "collectionId": 1611115294,
+      "artistName": "Kaho Nakamura",
+      "collectionName": "NIA",
+      "collectionCensoredName": "NIA",
+      "artistViewUrl": "https://music.apple.com/us/artist/kaho-nakamura/586860631?uo=4",
+      "collectionViewUrl": "https://music.apple.com/us/album/nia/1611115294?uo=4",
+      "artworkUrl60": "https://is5-ssl.mzstatic.com/image/thumb/Music122/v4/dc/8b/fc/dc8bfc57-9e7b-2322-2545-151db58618d8/4543034051724.png/60x60bb.jpg",
+      "artworkUrl100": "https://is5-ssl.mzstatic.com/image/thumb/Music122/v4/dc/8b/fc/dc8bfc57-9e7b-2322-2545-151db58618d8/4543034051724.png/100x100bb.jpg",
+      "collectionPrice": 11.99,
+      "collectionExplicitness": "notExplicit",
+      "trackCount": 12,
+      "copyright": "℗ 2022 SPACE SHOWER MUSIC",
+      "country": "USA",
+      "currency": "USD",
+      "releaseDate": "2022-03-23T07:00:00Z",
+      "primaryGenreName": "J-Pop"
+    }
+  ]
+}
