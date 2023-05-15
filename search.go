@@ -9,7 +9,7 @@ func (c *Client) Search(ctx context.Context, opts ...RequestOption) (*iTunesResu
 
 	var result iTunesResult
 
-	err := c.get(itunesUrl, &result)
+	err := c.get(ctx, itunesUrl, &result)
 
 	if err != nil {
 		return nil, err
