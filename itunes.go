@@ -29,9 +29,9 @@ type Client struct {
 
 type ClientOption func(client *Client)
 
-func New(httpClient *http.Client, opts ...ClientOption) *Client {
+func New(opts ...ClientOption) *Client {
 	c := &Client{
-		http:    httpClient,
+		http:    &http.Client{},
 		baseURL: "https://itunes.apple.com/",
 	}
 
