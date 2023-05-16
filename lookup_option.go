@@ -1,7 +1,6 @@
 package itunes
 
 import (
-	"net/url"
 	"strconv"
 )
 
@@ -42,13 +41,4 @@ func ISBN(isbn int64) LookupOption {
 	return func(o *requestOption) {
 		o.urlParams.Set("isbn", strconv.FormatInt(isbn, 10))
 	}
-}
-
-func processLookupOption(option LookupOption) requestOption {
-	o := requestOption{
-		urlParams: url.Values{},
-	}
-	option(&o)
-
-	return o
 }
