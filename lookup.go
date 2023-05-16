@@ -2,19 +2,16 @@ package itunes
 
 import (
 	"context"
-	"net/url"
+	"fmt"
 )
 
 func (c *Client) Lookup(ctx context.Context, lookupOpt LookupOption, opts ...RequestOption) (*iTunesResult, error) {
-	v := processOptions(opts...).urlParams
+	v := processOptions(opts...)
+	lookupOpt(&v)
 
-	k := requestOption{
-		urlParams: url.Values{},
-	}
+	itunesUrl := c.baseURL + "lookup?" + v.urlParams.Encode()
 
-	lookupOpt(&k)
-
-	itunesUrl := c.baseURL + "lookup?" + k.urlParams.Encode() + v.Encode()
+	fmt.Printf("%v\n", itunesUrl)
 
 	var result iTunesResult
 
