@@ -1,6 +1,8 @@
 package itunes
 
-import "context"
+import (
+	"context"
+)
 
 func (c *Client) Search(ctx context.Context, opts ...RequestOption) (*iTunesResult, error) {
 	v := processOptions(opts...).urlParams
@@ -8,7 +10,6 @@ func (c *Client) Search(ctx context.Context, opts ...RequestOption) (*iTunesResu
 	itunesUrl := c.baseURL + "search?" + v.Encode()
 
 	var result iTunesResult
-
 	err := c.get(ctx, itunesUrl, &result)
 
 	if err != nil {
