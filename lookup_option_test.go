@@ -20,8 +20,11 @@ func TestLookupOptions(t *testing.T) {
 		tt := tt
 		t.Run(name, func(t *testing.T) {
 			t.Parallel()
+			v := processOptions()
+			tt.input(&v)
 
-			actual := processLookupOption(tt.input).urlParams.Encode()
+			actual := v.urlParams.Encode()
+
 			if actual != tt.expected {
 				t.Errorf("processLookupOption(%v) = %v; want %v", tt.input, actual, tt.expected)
 			}
