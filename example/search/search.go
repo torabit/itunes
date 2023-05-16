@@ -26,6 +26,7 @@ func main() {
 		itunes.Attribute(itunes.AttributeArtistTerm),
 		itunes.Country(itunes.CountryJP),
 		itunes.Entity(itunes.EntityMusicTrack),
+		itunes.Limit(2),
 	)
 
 	if err != nil {
